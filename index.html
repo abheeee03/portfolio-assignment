@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhee | Portfolio</title>
+  <meta name="description" content="Abhee's personal portfolio — Full-stack developer passionate about building beautiful and functional digital experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
+
+<body>
+
+  <!-- ===================== HEADER / NAVBAR ===================== -->
+  <header class="header" id="top">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#top" class="logo" aria-label="Home">
+        <span class="logo-bracket">&lt;</span>Abhee<span class="logo-bracket">/&gt;</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== ABOUT / HERO ===================== -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="bento-grid bento-hero">
+
+          <!-- Intro card -->
+          <article class="bento-card card-intro" aria-label="Introduction">
+            <div class="card-tag">👋 Available for work</div>
+            <h1 id="about-heading" class="hero-name">
+              Hi, I'm <span class="gradient-text">Abhee</span>
+            </h1>
+            <p class="hero-role">Full-Stack Developer &amp; UI Enthusiast</p>
+            <p class="hero-bio">
+              I craft <strong>beautiful, performant</strong> web experiences — from pixel-perfect frontends to resilient backends. Passionate about turning complex problems into elegant solutions.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary" id="viewProjectsBtn">View Projects</a>
+              <a href="#contact" class="btn btn-ghost" id="contactBtn">Get in Touch</a>
+            </div>
+          </article>
+
+          <!-- Avatar / Status card -->
+          <article class="bento-card card-avatar" aria-label="Profile picture and status">
+            <div class="avatar-ring">
+              <div class="avatar-img" aria-hidden="true">A</div>
+            </div>
+            <div class="status-badge">
+              <span class="status-dot" aria-hidden="true"></span>
+              Open to opportunities
+            </div>
+            <ul class="social-links" role="list" aria-label="Social links">
+              <li><a href="#" class="social-btn" id="githubLink" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a></li>
+              <li><a href="#" class="social-btn" id="linkedinLink" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                LinkedIn
+              </a></li>
+            </ul>
+          </article>
+
+          <!-- About Me text card -->
+          <article class="bento-card card-about" aria-labelledby="about-me-title">
+            <span class="card-eyebrow">About Me</span>
+            <h2 id="about-me-title">Building the future, one commit at a time.</h2>
+            <p>
+              I'm a Computer Science student with a deep love for front-end engineering and design systems. When I'm not writing code, you'll find me exploring design trends, contributing to open source, or brewing the perfect cup of coffee ☕.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-value">15+</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">3+</span>
+                <span class="stat-label">Years Coding</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">5+</span>
+                <span class="stat-label">Technologies</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Fun fact card -->
+          <article class="bento-card card-fun" aria-label="Fun fact">
+            <span class="card-eyebrow">Fun fact</span>
+            <p class="fun-text">I dark-mode <em>everything.</em> 🌙</p>
+          </article>
+
+          <!-- Location card -->
+          <article class="bento-card card-location" aria-label="Location">
+            <span class="card-eyebrow">📍 Based in</span>
+            <p class="location-text">India</p>
+            <p class="location-sub">Available globally · Remote friendly</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">What I know</span>
+          <h2 id="skills-heading" class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-subtitle">A curated set of tools I use to bring ideas to life.</p>
+        </div>
+
+        <div class="bento-grid bento-skills">
+
+          <article class="bento-card card-skill-group" aria-labelledby="frontend-title">
+            <span class="card-eyebrow">⚡ Frontend</span>
+            <h3 id="frontend-title">UI Development</h3>
+            <ul class="skill-list" role="list">
+              <li class="skill-item"><span class="skill-icon">🌐</span>HTML5 &amp; CSS3<div class="skill-bar"><div class="skill-fill" style="--fill:95%"></div></div></li>
+              <li class="skill-item"><span class="skill-icon">🟨</span>JavaScript (ES6+)<div class="skill-bar"><div class="skill-fill" style="--fill:88%"></div></div></li>
+              <li class="skill-item"><span class="skill-icon">⚛️</span>React &amp; Next.js<div class="skill-bar"><div class="skill-fill" style="--fill:80%"></div></div></li>
+              <li class="skill-item"><span class="skill-icon">🎨</span>Figma / UI Design<div class="skill-bar"><div class="skill-fill" style="--fill:75%"></div></div></li>
+            </ul>
+          </article>
+
+          <article class="bento-card card-skill-group" aria-labelledby="backend-title">
+            <span class="card-eyebrow">🛠️ Backend</span>
+            <h3 id="backend-title">Server &amp; Data</h3>
+            <ul class="skill-list" role="list">
+              <li class="skill-item"><span class="skill-icon">🟩</span>Node.js &amp; Express<div class="skill-bar"><div class="skill-fill" style="--fill:82%"></div></div></li>
+              <li class="skill-item"><span class="skill-icon">🐍</span>Python &amp; Flask<div class="skill-bar"><div class="skill-fill" style="--fill:70%"></div></div></li>
+              <li class="skill-item"><span class="skill-icon">🗄️</span>PostgreSQL / Supabase<div class="skill-bar"><div class="skill-fill" style="--fill:74%"></div></div></li>
+              <li class="skill-item"><span class="skill-icon">🔥</span>REST APIs &amp; JSON<div class="skill-bar"><div class="skill-fill" style="--fill:90%"></div></div></li>
+            </ul>
+          </article>
+
+          <article class="bento-card card-skill-tags" aria-label="Tools and extras">
+            <span class="card-eyebrow">🧰 Tools &amp; More</span>
+            <h3>Extra Weapons</h3>
+            <div class="tag-cloud">
+              <span class="skill-tag">Git &amp; GitHub</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">Linux CLI</span>
+              <span class="skill-tag">Vite</span>
+              <span class="skill-tag">Vercel</span>
+              <span class="skill-tag">Postman</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">What I've built</span>
+          <h2 id="projects-heading" class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">A selection of work I'm proud of.</p>
+        </div>
+
+        <div class="bento-grid bento-projects">
+
+          <!-- Project 1 – Featured large card -->
+          <article class="bento-card card-project card-project-featured" aria-labelledby="proj1-title">
+            <div class="project-banner project-banner-1" aria-hidden="true">
+              <div class="project-mockup">
+                <div class="mockup-bar"></div>
+                <div class="mockup-content">
+                  <div class="mockup-line long"></div>
+                  <div class="mockup-line medium"></div>
+                  <div class="mockup-line short"></div>
+                  <div class="mockup-btn"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-badge badge-web">Web App</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 id="proj1-title" class="project-title">RefineIt — AI Design Analyzer</h3>
+              <p class="project-desc">Upload any UI screenshot and get instant AI-powered design feedback including color, typography, layout, and accessibility scores.</p>
+              <div class="project-stack">
+                <span class="stack-tag">Next.js</span>
+                <span class="stack-tag">Supabase</span>
+                <span class="stack-tag">Gemini AI</span>
+                <span class="stack-tag">TypeScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-primary" id="proj1LiveBtn">Live Demo →</a>
+                <a href="#" class="btn btn-sm btn-ghost" id="proj1CodeBtn">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="bento-card card-project" aria-labelledby="proj2-title">
+            <div class="project-banner project-banner-2" aria-hidden="true">
+              <div class="quiz-icon">🎮</div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-badge badge-game">Real-time</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 id="proj2-title" class="project-title">QuizDuel — PvP Quiz Platform</h3>
+              <p class="project-desc">Real-time multiplayer quiz battles with WebSocket-powered gameplay, live scoreboards, and dynamic question generation.</p>
+              <div class="project-stack">
+                <span class="stack-tag">Node.js</span>
+                <span class="stack-tag">Socket.io</span>
+                <span class="stack-tag">React</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-primary" id="proj2LiveBtn">Live Demo →</a>
+                <a href="#" class="btn btn-sm btn-ghost" id="proj2CodeBtn">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="bento-card card-project" aria-labelledby="proj3-title">
+            <div class="project-banner project-banner-3" aria-hidden="true">
+              <div class="tracker-icon">📊</div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-badge badge-tool">Tool</span>
+                <span class="project-year">2024</span>
+              </div>
+              <h3 id="proj3-title" class="project-title">PlacementTracker — Student Portal</h3>
+              <p class="project-desc">Full-stack student placement management system with admin dashboards, document tracking, and analytics for college placement cells.</p>
+              <div class="project-stack">
+                <span class="stack-tag">PHP</span>
+                <span class="stack-tag">MySQL</span>
+                <span class="stack-tag">CSS3</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-primary" id="proj3LiveBtn">Live Demo →</a>
+                <a href="#" class="btn btn-sm btn-ghost" id="proj3CodeBtn">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CTA card -->
+          <article class="bento-card card-project-cta" aria-label="More projects">
+            <span class="card-tag">All work</span>
+            <p>Want to see everything I've built?</p>
+            <a href="#" class="btn btn-primary" id="allProjectsBtn">View All Projects →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's connect</span>
+          <h2 id="contact-heading" class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Have a project in mind or just want to say hi? Drop a message!</p>
+        </div>
+
+        <div class="bento-grid bento-contact">
+
+          <!-- Contact info card -->
+          <article class="bento-card card-contact-info" aria-label="Contact information">
+            <span class="card-eyebrow">Direct Contact</span>
+            <h3>Let's Talk!</h3>
+            <ul class="contact-info-list" role="list">
+              <li class="contact-info-item">
+                <span class="contact-info-icon" aria-hidden="true">📧</span>
+                <div>
+                  <span class="contact-info-label">Email</span>
+                  <a href="mailto:abhee@example.com" class="contact-info-value" id="emailLink">abhee@example.com</a>
+                </div>
+              </li>
+              <li class="contact-info-item">
+                <span class="contact-info-icon" aria-hidden="true">💼</span>
+                <div>
+                  <span class="contact-info-label">LinkedIn</span>
+                  <a href="#" class="contact-info-value" id="linkedinContactLink">linkedin.com/in/abhee</a>
+                </div>
+              </li>
+              <li class="contact-info-item">
+                <span class="contact-info-icon" aria-hidden="true">🐙</span>
+                <div>
+                  <span class="contact-info-label">GitHub</span>
+                  <a href="#" class="contact-info-value" id="githubContactLink">github.com/abhee</a>
+                </div>
+              </li>
+            </ul>
+            <div class="availability-badge" aria-label="Currently available">
+              <span class="status-dot" aria-hidden="true"></span>
+              Currently open to full-time &amp; freelance roles
+            </div>
+          </article>
+
+          <!-- Contact form card -->
+          <article class="bento-card card-form" aria-labelledby="form-heading">
+            <span class="card-eyebrow">Send a Message</span>
+            <h3 id="form-heading">Drop Me a Line</h3>
+            <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nameInput" class="form-label">Your Name</label>
+                  <input type="text" id="nameInput" name="name" class="form-input" placeholder="John Doe" required autocomplete="name" />
+                  <span class="form-error" id="nameError" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="emailInput" class="form-label">Email Address</label>
+                  <input type="email" id="emailInput" name="email" class="form-input" placeholder="john@example.com" required autocomplete="email" />
+                  <span class="form-error" id="emailError" role="alert"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subjectInput" class="form-label">Subject</label>
+                <input type="text" id="subjectInput" name="subject" class="form-input" placeholder="What's this about?" required />
+              </div>
+              <div class="form-group">
+                <label for="messageInput" class="form-label">Message</label>
+                <textarea id="messageInput" name="message" class="form-textarea" placeholder="Tell me about your project..." rows="5" required></textarea>
+                <span class="form-error" id="messageError" role="alert"></span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="submitFormBtn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-icon" aria-hidden="true">🚀</span>
+              </button>
+              <div class="form-success" id="formSuccess" role="status" aria-live="polite" hidden>
+                ✅ Message sent! I'll get back to you soon.
+              </div>
+            </form>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#top" class="logo" aria-label="Back to top">
+            <span class="logo-bracket">&lt;</span>Abhee<span class="logo-bracket">/&gt;</span>
+          </a>
+          <p class="footer-tagline">Crafting digital experiences with care &amp; curiosity.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#about" class="footer-link">About</a>
+          <a href="#skills" class="footer-link">Skills</a>
+          <a href="#projects" class="footer-link">Projects</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </nav>
+        <div class="footer-social" aria-label="Social links">
+          <a href="#" class="footer-social-btn" id="footerGithub" aria-label="GitHub">GH</a>
+          <a href="#" class="footer-social-btn" id="footerLinkedin" aria-label="LinkedIn">IN</a>
+          <a href="#" class="footer-social-btn" id="footerEmail" aria-label="Email">✉</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Abhee. Designed &amp; built with ❤️ and way too much ☕.</p>
+        <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">↑ Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Navbar scroll glass effect
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 50);
+    }, { passive: true });
+
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', !expanded);
+      navLinks.classList.toggle('open');
+      navToggle.classList.toggle('open');
+    });
+
+    // Close nav on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinkEls = document.querySelectorAll('.nav-link');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinkEls.forEach(l => l.classList.remove('active'));
+          const active = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { threshold: 0.4 });
+    sections.forEach(s => observer.observe(s));
+
+    // Animate bento cards on scroll
+    const cards = document.querySelectorAll('.bento-card');
+    const cardObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          cardObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    cards.forEach(card => cardObserver.observe(card));
+
+    // Contact form validation
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      let valid = true;
+      const name = document.getElementById('nameInput');
+      const email = document.getElementById('emailInput');
+      const message = document.getElementById('messageInput');
+      const nameErr = document.getElementById('nameError');
+      const emailErr = document.getElementById('emailError');
+      const msgErr = document.getElementById('messageError');
+
+      nameErr.textContent = '';
+      emailErr.textContent = '';
+      msgErr.textContent = '';
+
+      if (!name.value.trim()) { nameErr.textContent = 'Name is required.'; valid = false; }
+      if (!email.value.trim() || !/\S+@\S+\.\S+/.test(email.value)) { emailErr.textContent = 'A valid email is required.'; valid = false; }
+      if (!message.value.trim()) { msgErr.textContent = 'Message cannot be empty.'; valid = false; }
+
+      if (valid) {
+        const btn = document.getElementById('submitFormBtn');
+        btn.disabled = true;
+        btn.querySelector('.btn-text').textContent = 'Sending...';
+        setTimeout(() => {
+          form.reset();
+          btn.disabled = false;
+          btn.querySelector('.btn-text').textContent = 'Send Message';
+          const success = document.getElementById('formSuccess');
+          success.hidden = false;
+          setTimeout(() => { success.hidden = true; }, 5000);
+        }, 1200);
+      }
+    });
+  </script>
+
+</body>
+</html>
